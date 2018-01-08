@@ -24,7 +24,6 @@ class EmailParser
         @@emails << email
       end
     end
-    @@emails
   end
 
 end

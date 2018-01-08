@@ -15,8 +15,7 @@ class EmailParser
   end
 
   def parse
-    answer = @email.split(/[\s(\,\s)]/)
-    binding.pry
+    @email.split(/\,\s?/).each {|email| @@email << email}
   end
 
 end

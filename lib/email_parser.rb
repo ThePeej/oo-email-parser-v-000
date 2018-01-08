@@ -10,20 +10,18 @@ class EmailParser
 
   @@emails = []
 
-  def initialize(email)
-    @email = email
-  end
-
-  def self.all
-    @@emails
+  def initialize(emails)
+    @emails = emails
   end
 
   def parse
-    @email.split(/\,?\s/).each do |email|
-      if !(@@emails.include?(email))
-        @@emails << email
+    @emails.split(/\,?\s/).each do |email|
+      emails = []
+      if !(emails.include?(email))
+        emails << email
       end
     end
+    emails
   end
 
 end

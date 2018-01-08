@@ -10,7 +10,6 @@ class EmailParser
 
   def initialize(email)
     @email = email
-    # binding.pry
   end
 
   def parse

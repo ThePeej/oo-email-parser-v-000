@@ -16,7 +16,7 @@ class EmailParser
 
   def parse
     @email.split(/\,?\s/).each do |email|
-      if !(@@email.include?(email))
+      if !(@@emails.include?(email))
         @@emails << email
       end
     end

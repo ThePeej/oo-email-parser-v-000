@@ -19,7 +19,7 @@ class EmailParser
     @emails.split(/\,?\s/).each do |email|
       if !(emails.include?(email))
         emails << email
-        binding.pry
+        # binding.pry
       end
     end
     emails

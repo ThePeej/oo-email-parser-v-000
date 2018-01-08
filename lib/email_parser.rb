@@ -20,11 +20,11 @@ class EmailParser
 
   def parse
     @email.split(/\,?\s/).each do |email|
-      if !(@@emails.include?(email))
-        @@emails << email
+      if !(self.all.include?(email))
+        self.all << email
       end
     end
-    @@emails
+    self.all
   end
 
 end

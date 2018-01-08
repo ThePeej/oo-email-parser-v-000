@@ -3,12 +3,14 @@
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 
+require 'pry'
+
 class EmailParser
   attr_accessor :email
 
   def initialize(email)
     @email = email
-    binding.pry
+    # binding.pry
   end
 
   def parse

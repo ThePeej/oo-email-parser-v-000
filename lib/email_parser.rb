@@ -15,6 +15,7 @@ class EmailParser
   end
 
   def parse
+    binding.pry
     @emails.split(/\,?\s/).each do |email|
       emails = []
       if !(emails.include?(email))
